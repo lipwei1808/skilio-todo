@@ -1,0 +1,99 @@
+.wrapper {
+  max-width: 1140px;
+  margin: 40px auto;
+  padding: 0 30px;
+}
+
+.error {
+  color: red;
+  display: inline-block;
+  margin: 10px 0;
+}
+
+.inputContainer {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.imgInput {
+  display: flex;
+  align-items: flex-start;
+}
+
+.button {
+  align-self: flex-end;
+  border: 0;
+  border-radius: 15px;
+  background-color: rgb(255, 120, 58);
+  color: white;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgb(255, 81, 0);
+}
+
+.listGroup {
+  width: 100%;
+}
+
+.topBar {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.updateButton {
+  border-radius: 15px;
+  padding: 10px 15px;
+  border: 0;
+  cursor: pointer;
+  background-color: #ddd;
+}
+
+.updateButton:hover {
+  background-color: #eee;
+}
+
+.updateButton:disabled {
+  pointer-events: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .wrapper {
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  textarea {
+    margin-top: 10px;
+  }
+
+  .imgInput {
+    flex-direction: column;
+  }
+
+  .previewImg {
+    margin-top: 10px;
+  }
+
+  .updateButton {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+}
